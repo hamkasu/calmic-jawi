@@ -485,9 +485,9 @@
                 ),
                 React.createElement('div', { className: "flex gap-2 items-center flex-wrap" },
                   React.createElement('button', {
-                    onClick: () => window.playSound('ا', 'ar-SA'),
+                    onClick: () => window.playSound('test', 'en-US'),
                     className: "px-3 py-1.5 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition text-sm font-medium",
-                    title: "Test if audio works - plays 'alif'"
+                    title: "Test if audio works"
                   }, '🔊 Test Audio'),
                   currentUser?.role === 'superuser' && React.createElement('button', {
                     onClick: openAdmin,
@@ -531,7 +531,7 @@
                 React.createElement('div', { className: "flex justify-center items-center gap-4 mb-8" },
                   React.createElement('div', { className: "text-8xl font-arabic" }, jawiLetters[currentQuiz].jawi),
                   React.createElement('button', {
-                    onClick: () => window.playSound(jawiLetters[currentQuiz].jawi, 'ar-SA'),
+                    onClick: () => window.playSound(jawiLetters[currentQuiz].rumi, 'en-US'),
                     className: "p-3 bg-teal-500 text-white rounded-full hover:bg-teal-600 transition shadow-lg",
                     title: "Play pronunciation"
                   },
@@ -587,7 +587,7 @@
                       React.createElement('div', { className: "flex items-center gap-3 mb-2" },
                         React.createElement('h3', { className: "text-2xl font-bold text-emerald-800" }, selectedLetter.name),
                         React.createElement('button', {
-                          onClick: () => window.playSound(selectedLetter.jawi, 'ar-SA'),
+                          onClick: () => window.playSound(selectedLetter.rumi, 'en-US'),
                           className: "p-2 bg-emerald-500 text-white rounded-full hover:bg-emerald-600 transition shadow-lg",
                           title: "Play pronunciation"
                         },
